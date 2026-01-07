@@ -1,5 +1,6 @@
-# Swimming Pool Detection - Professional Structure
+# Swimming Pool Detection 
 
+ajouter une petite description du projet
 ## Project Structure
 
 ```
@@ -101,6 +102,8 @@ Le script affiche :
 - `output_[nom_image].jpg` : Images avec contours bleus et labels ("Pool 1", "Pool 2", etc.)
 - `coordinates.txt` : Coordonnées au format `x,y;` pour chaque point du contour
 
+exemple des images comme avant apres le traitement ici 
+
 ## Modèle
 
 Le projet utilise le modèle **mozilla-ai/swimming-pool-detector** :
@@ -109,6 +112,18 @@ Le projet utilise le modèle **mozilla-ai/swimming-pool-detector** :
 - Optimisé pour la détection de piscines dans les images satellites
 - Disponible sur [Hugging Face](https://huggingface.co/mozilla-ai/swimming-pool-detector)
 
-## License
+## Exemples Visuels
 
-Ce projet utilise des modèles open-source. Consultez les licences respectives des dépendances.
+Voici quelques exemples de résultats obtenus par le système de détection hybride :
+
+### Image d'ensemble
+![Piscines Détectées](data/output/output_swimming%20pools%20detected.jpg)
+*Détection multiple de piscines de formes variées.*
+
+### Détails de détections
+| Exemple 1 | Exemple 2 |
+| :---: | :---: |
+| ![Exemple 1](data/output/output_000000079.jpg) | ![Exemple 2](data/output/output_000000292.jpg) |
+| *Alignement précis des contours* | *Gestion des ombres et reflets* |
+
+## License
