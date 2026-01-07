@@ -1,6 +1,6 @@
-# Swimming Pool Detection 
+# Swimming Pool Detection - Professional Structure
 
-ajouter une petite description du projet
+Ce projet est une solution de pointe pour la détection automatisée et précise de piscines à partir d'imagerie aérienne et satellite. En combinant la puissance de l'apprentissage profond (YOLO11m) pour la localisation et la rigueur du traitement d'images traditionnel (OpenCV) pour le contourage, il offre une précision exceptionnelle tout en minimisant les faux positifs.
 ## Project Structure
 
 ```
@@ -118,12 +118,20 @@ Voici quelques exemples de résultats obtenus par le système de détection hybr
 
 ### Image d'ensemble
 ![Piscines Détectées](data/output/output_swimming%20pools%20detected.jpg)
-*Détection multiple de piscines de formes variées.*
+*Détection multiple de piscines de formes variées sur une zone étendue.*
 
-### Détails de détections
-| Exemple 1 | Exemple 2 |
+### Galerie de résultats
+| Exemple A | Exemple B | Exemple C |
+| :---: | :---: | :---: |
+| ![Exemple 1](data/output/output_000000079.jpg) | ![Exemple 2](data/output/output_000000292.jpg) | ![Exemple 3](data/output/output_000000136.jpg) |
+| *Alignement précis* | *Reflets et ombres* | *Forme rectangulaire nette* |
+
+| Exemple D | Exemple E |
 | :---: | :---: |
-| ![Exemple 1](data/output/output_000000079.jpg) | ![Exemple 2](data/output/output_000000292.jpg) |
-| *Alignement précis des contours* | *Gestion des ombres et reflets* |
+| ![Exemple 4](data/output/output_000000216.jpg) | ![Exemple 5](data/output/output_000000378.jpg) |
+| *Détection en milieu dense* | *Piscine isolée* |
+
+> [!NOTE]
+> Cette galerie ne présente qu'un échantillon des résultats. L'ensemble des images traitées et le fichier de coordonnées complet sont disponibles dans le dossier [data/output/](data/output/).
 
 ## License
