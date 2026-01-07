@@ -48,7 +48,7 @@ HSV sépare la couleur (Hue) de la luminosité (Value), ce qui rend la détectio
 
 ---
 
-## 🔧 Fonction 1: `refine_contour_in_box()`
+## Fonction 1: `refine_contour_in_box()`
 
 ### Objectif
 Raffiner le contour d'une piscine à l'intérieur d'une boîte détectée par YOLO.
@@ -132,7 +132,7 @@ Contour Final ← Remappage ← Sélection ← Morphologie
 
 ---
 
-## 🎯 Fonction 2: `detect_pools()`
+## Fonction 2: `detect_pools()`
 
 ### Objectif
 Orchestrer la détection complète: YOLO → OpenCV → Sauvegarde.
@@ -206,7 +206,7 @@ def detect_pools(image_path, output_image_path, coordinates_path, model):
 
 ---
 
-## 🚀 Fonction 3: `main` (Point d'Entrée)
+## Fonction 3: `main` (Point d'Entrée)
 
 ### Code Annoté
 
@@ -304,7 +304,7 @@ if __name__ == "__main__":
 
 ---
 
-## 📊 Exemple de Données
+##  Exemple de Données
 
 ### Format du fichier `coordinates.txt`
 
@@ -327,7 +327,7 @@ Chaque point est au format `x,y;` où:
 
 ---
 
-## 🎨 Concepts Clés
+## Concepts Clés
 
 ### 1. **Pourquoi une Approche Hybride ?**
 
@@ -437,18 +437,7 @@ Sans padding:          Avec padding (5px):
 
 ---
 
-## 🚨 Gestion des Erreurs
-
-Le code gère plusieurs cas d'erreur:
-
-1. **Image non trouvée**: `if image is None: return`
-2. **ROI vide**: `if roi.size == 0: return None`
-3. **Aucun contour**: Retourne la boîte YOLO comme fallback
-4. **Modèle non chargé**: `try/except` avec message d'erreur
-
----
-
-## 💡 Points Clés à Retenir
+##  Points Clés à Retenir
 
 1. **YOLO** = Localisation robuste (élimine les faux positifs)
 2. **OpenCV** = Contours précis (capture les formes exactes)
@@ -457,5 +446,3 @@ Le code gère plusieurs cas d'erreur:
 5. **Batch processing** = Traite plusieurs images automatiquement
 
 ---
-
-**Félicitations !** Vous comprenez maintenant tout le système de détection hybride ! 🎉
